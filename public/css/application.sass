@@ -1,0 +1,56 @@
+!border = 1px solid rgba(50, 50, 50, 0.8)
+
+body, input, button
+  :font 82.5% Helvetica, Arial, sans-serif
+  // :font large Monaco, monospace
+
+body
+  :background #eeeeee
+  :color #555555
+  :padding 0
+  :margin 0
+  :overflow hidden
+
+input, button
+  :-webkit-border-radius 3px
+  :-moz-border-radius 3px
+  :border !border
+  :padding 3px 6px
+
+input[type=submit], button
+  :text-shadow 0px 1px 0px rgba(255, 255, 255, 0.5)
+
+a
+  :color #596C86
+
+div#container
+  header
+    :position fixed
+    :width 100%
+    :padding 6px
+    :background #DCF0F7
+    :border-bottom !border
+    :font-size small
+    :text-align left
+  section#content
+    :position relative
+    :margin 0px auto
+    :padding-top 11px
+    :margin-left 20px
+    div#posts
+      :margin 0px auto
+      :margin-top 50px
+      :background #FFF
+      :padding-left 10px
+      :width 50%
+      .post
+        :border-bottom 1px solid #cccccc
+        :padding 20px
+        :margin-top 10px
+        .title
+          :font-weight bolder
+          :text-decoration none
+        .body
+          :margin-top 20px
+          :padding 10px
+          :border-left 1px solid #EEE

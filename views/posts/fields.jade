@@ -1,0 +1,7 @@
+div
+  label Title:
+  input(name='post[title]', value=post.title || '')
+
+div
+  label Body:
+  textarea(name='post[body]', rows=20, cols=40, value=post.body || '', type='body')

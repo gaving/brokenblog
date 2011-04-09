@@ -1,0 +1,7 @@
+.page
+  h2 New post
+
+  form.posts(method='post', action='/posts')
+    !=partial('fields', { locals: { post: post } })
+    div
+      input(type='submit', value='Post')

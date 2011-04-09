@@ -1,0 +1,6 @@
+section#content
+  #posts
+    - for (var d in posts)
+      div.post
+        a.title(id='post-title-' + posts[d].id, href='/posts/' + posts[d].id)=posts[d].title
+        div.body=posts[d].body
