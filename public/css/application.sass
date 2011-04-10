@@ -1,8 +1,7 @@
 !border = 1px solid rgba(50, 50, 50, 0.8)
 
 body, input, button
-  :font 82.5% Helvetica, Arial, sans-serif
-  // :font large Monaco, monospace
+  :font medium Helvetica Neue, sans-serif
 
 body
   :background #eeeeee
@@ -25,28 +24,28 @@ a
 
 div#container
   header
-    :position fixed
     :width 100%
     :padding 6px
     :background #DCF0F7
     :border-bottom !border
-    :font-size small
-    :text-align left
+    :text-align center
   section#content
     :position relative
     :margin 0px auto
     :padding-top 11px
     :margin-left 20px
+    :margin-bottom 50px
     div#posts
       :margin 0px auto
-      :margin-top 50px
       :background #FFF
       :padding-left 10px
-      :width 50%
+      :width 70%
+      :border 1px solid #DDD
       .post
-        :border-bottom 1px solid #cccccc
+        :border-bottom 1px solid #EBEBEB
         :padding 20px
         :margin-top 10px
+        :text-align center
         .title
           :font-weight bolder
           :text-decoration none
@@ -54,3 +53,5 @@ div#container
           :margin-top 20px
           :padding 10px
           :border-left 1px solid #EEE
+          :text-align justify
+          :font-size 0.9em

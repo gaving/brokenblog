@@ -1,5 +1,5 @@
 body, input, button {
-  font: 82.5% Helvetica, Arial, sans-serif;}
+  font: medium Helvetica Neue, sans-serif;}
 
 body {
   background: #eeeeee;
@@ -21,32 +21,34 @@ a {
   color: #596C86;}
 
 div#container header {
-  position: fixed;
   width: 100%;
   padding: 6px;
   background: #DCF0F7;
   border-bottom: 1px solid rgba(50, 50, 50, 0.8);
-  font-size: small;
-  text-align: left;}
+  text-align: center;}
 div#container section#content {
   position: relative;
   margin: 0px auto;
   padding-top: 11px;
-  margin-left: 20px;}
+  margin-left: 20px;
+  margin-bottom: 50px;}
 div#container section#content div#posts {
   margin: 0px auto;
-  margin-top: 50px;
   background: #FFF;
   padding-left: 10px;
-  width: 50%;}
+  width: 70%;
+  border: 1px solid #DDD;}
 div#container section#content div#posts .post {
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #EBEBEB;
   padding: 20px;
-  margin-top: 10px;}
+  margin-top: 10px;
+  text-align: center;}
 div#container section#content div#posts .post .title {
   font-weight: bolder;
   text-decoration: none;}
 div#container section#content div#posts .post .body {
   margin-top: 20px;
   padding: 10px;
-  border-left: 1px solid #EEE;}
+  border-left: 1px solid #EEE;
+  text-align: justify;
+  font-size: 0.9em;}

@@ -1,8 +1,5 @@
 section#content
-  h2=d.title
-    a.button(href='/posts/' + d.id + '/edit') Edit
-  p=d.body
-  p
-    a.button(href='/posts')
-      &larr; All Posts
-  p=d.data
+  #posts
+      div.post
+        a.title(id='post-title-' + d.id, href='/posts/' + d.id)=d.title
+        div.body=d.body
