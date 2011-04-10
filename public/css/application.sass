@@ -1,13 +1,13 @@
-!border = 1px solid rgba(50, 50, 50, 0.8)
+
 
 body, input, button
   :font medium Helvetica Neue, sans-serif
   :text-rendering optimizelegibility
 body
-  :background #eeeeee
+  :background #ffffff
   :color #555555
   :padding 0
-  :margin 0
+  :margin-bottom 20px
   :overflow hidden
 
 input, button
@@ -21,14 +21,10 @@ input[type=submit], button
 
 a
   :color #596C86
+  :text-decoration underline
 
 div#container
-  header
-    :width 100%
-    :padding 6px
-    :background #DCF0F7
-    :border-bottom !border
-    :text-align center
+  
   section#content
     :position relative
     :margin 0px auto
@@ -40,19 +36,21 @@ div#container
       :background #FFF
       :padding-left 10px
       :width 70%
-      :border 1px solid #DDD
       .post
         :border-bottom 1px solid #EBEBEB
         :padding 20px
         :margin-top 10px
-        :text-align center
+        :text-align left
+        a 
+          :color #000000
+          :font-size 30px
         .title
-          :font-weight bolder
+          :font-weight bold
+          :text-align left
           :text-decoration none
         .body
-          :margin-top 20px
-          :padding 10px
-          :border-left 1px solid #EEE
+          :margin-top 0px
+          :padding 5px
           :text-align justify
           :font-size 0.9em
         .date
