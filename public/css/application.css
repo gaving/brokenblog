@@ -1,5 +1,5 @@
 body, input, button {
-  font: medium Helvetica Neue, sans-serif;}
+  font: medium Helvetica Neue, sans-serif; text-rendering: optimizeLegibility;}
 
 body {
   background: #eeeeee;
