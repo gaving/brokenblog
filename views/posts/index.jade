@@ -4,3 +4,4 @@ section#content
       div.post
         a.title(id='post-title-' + posts[d].id, href='/posts/' + posts[d].id)=posts[d].title
         div.body=posts[d].body
+        div.date(title=posts[d].date)=posts[d].relative

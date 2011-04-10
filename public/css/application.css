@@ -52,3 +52,7 @@ div#container section#content div#posts .post .body {
   border-left: 1px solid #EEE;
   text-align: justify;
   font-size: 0.9em;}
+div#container section#content div#posts .post .date {
+  text-align: right;
+  font-size: 0.8em;
+  color: #CCC;}

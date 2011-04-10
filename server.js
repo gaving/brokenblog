@@ -1,8 +1,10 @@
 (function() {
-    var app, express, pub;
+    var app, express, pub, relDate, _;
     express = require('express');
     pub = __dirname + '/public';
     Post = require('./models/post');
+    relDate = require('relative-date');
+    _ = require('underscore');
     app = express.createServer(express.compiler({
         src: pub,
         enable: ['sass']
@@ -16,7 +18,8 @@
     });
 
     app.get('/posts', function(req, res) {
-        Post.find({}, [],  { sort: ['date', 'ascending'] }, function(err, posts) {
+        Post.find({}, [],  { sort: ['date', 'desc'] }, function(err, posts) {
+            posts.map(function(post) { post.relative = relDate(post.date); });
             res.render('posts/index.jade', {
                 locals: { posts: posts }
             });
