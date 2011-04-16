@@ -1,2 +1,6 @@
-data
-
+.DS_Store
+tags
+log/
+vendor/
+data/
+.monitor
