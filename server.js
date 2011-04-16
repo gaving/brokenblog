@@ -19,8 +19,8 @@
     });
 
     app.get('/posts', function(req, res) {
-        Post.find({}, [],  { sort: ['date', 'desc'] }, function(err, posts) {
-            posts.map(function(post) { post.relative = relDate(post.date); });
+        Post.find().sort('_id', 'descending').limit(5).find(function(err, posts) {
+            _.map(posts, (function(post) { post.relative = relDate(post.date); }));
             res.render('posts/index.jade', {
                 locals: { posts: posts }
             });
