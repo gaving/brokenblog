@@ -1,10 +1,11 @@
 (function() {
-    var app, express, pub, relDate, _;
+    var app, express, pub, relDate, _, md;
     express = require('express');
     pub = __dirname + '/public';
     Post = require('./models/post');
     relDate = require('relative-date');
     _ = require('underscore');
+    md = require('markdown');
     app = express.createServer(express.compiler({
         src: pub,
         enable: ['sass']
@@ -42,6 +43,8 @@
     });
 
     app.post('/posts', function(req, res) {
+        req.body.post.body = md.parse(req.body.post.body);
+        console.log(req.body.post.body);
         var post = new Post(req.body.post);
         post.save(function() {
             res.redirect('/posts')

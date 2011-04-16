@@ -3,5 +3,5 @@ section#content
     - for (var d in posts)
       div.post
         a.title(id='post-title-' + posts[d].id, href='/posts/' + posts[d].id)=posts[d].title
-        div.body=posts[d].body
+        div.body!=posts[d].body
         div.date(title=posts[d].date)=posts[d].relative
